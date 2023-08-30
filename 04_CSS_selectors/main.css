@@ -1,0 +1,35 @@
+/* looks for an id of inputs */
+#inputs {
+    color: red;
+}
+
+/* selects any heading */
+h1, h2, h3 ,h4, h5, h6 {
+    color: purple;
+}
+
+/* a that is a sibling of an h2 */
+h2 ~ a {
+    color: orange;
+}
+
+/* a that is an adjacent sibling of an h2 */
+h2 + a {
+    color: turquoise;
+}
+
+
+/* p anywhere inside a div */
+div p {
+    color: green;
+}
+
+/* p that's directly under a div */
+div > p {
+    color: pink;
+}
+
+/* looks for h2's with a class of subheading */
+h2.subheading {
+    color: yellow;
+}
