@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <p> Content </p>
+    <!-- form with where I'm sending the data and how -->
+    <form action="http://localhost:8080/login">
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <br>
+            <!-- id links the input to a label -->
+            <!-- name gives the value a key -->
+            <input type="text" name="user" id="username" autofocus required>
+            <br>
+            <label>Password:</label>
+            <br>
+            <input type="password" name="pass" placeholder="password" required/>
+            <br>
+            <label>Re-enter Password:</label>
+            <br>
+            <input type="password" placeholder="same password" required/>
+            <br>
+        </fieldset>
+        <!-- <input type="button" value="Login"> -->
+        <fieldset>
+            <legend>Other inputs</legend>
+            <label for="check">Checkbox:</label>
+            <input type="checkbox" id="check">
+            <br>
+            <label>Gender:</label>
+            <input type="radio" name="gender">M
+            <input type="radio" name="gender">F
+            <input type="radio" name="gender">Other
+            <br>
+            <label for="countryInput">Country:</label>
+            <select name="country" id="countryInput">
+                <option value="UK">United Kingdom</option>
+                <option value="US" selected>United States</option>
+                <option value="AU">Australia</option>
+                <option value="KG">Kyrgyzstan</option>
+            </select>
+            <br>
+            <label for="ageInput">age</label>
+            <input type="range" name="age" id="ageInput" min="1" max="100" >
+            <br>
+            <label for="numInput">Age 2:</label>
+            <input type="number" name="age" id="numInput" min="1" max="100" value="0">
+            <br>
+            <label for="bdayInput">Birthday:</label>
+            <input type="date" name="bday" id="bdayInput">
+            <br>
+            <label for="emailInput">Email:</label>
+            <br>
+            <input type="email" name="email" id="emailInput">
+        </fieldset>
+        <fieldset>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
