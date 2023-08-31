@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        div > p {
+            border: 1px dotted black;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Box Model</h2>
+            <div>
+                <label style="display: block;" for="input">Input:</label>
+                <input style="display: block;" type="text" name="input" id="input">
+            </div>
+            <br>
+            <div>
+                <!-- Adds a padding/margin clockwise from top -->
+                <button style="padding: 1px 2px 3px 4px;">btn</button>
+                <p style="display: inline;">1</p>
+                <p style="display: inline;">2</p>
+            </div>
+            <div>
+                <img src="./me.png" height="20px">
+            </div>
+        </section>
+        <section>
+            <h2>Float</h2>
+                <!-- Shunts pic to the right and allows text wrapping -->
+                <img src="./me.png" height="200px" style="float: right;">
+                <!-- disables float for this element (doesn't work for anything embedded in it) -->
+            <p style="clear: both;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et pretium arcu.
+                Proin aliquet blandit odio, id aliquam sem placerat id. 
+                Aenean malesuada pellentesque elementum.
+                <img src="./me.png" alt="fluffy guy" height="50px" style="float: left">
+                Mauris feugiat tincidunt risus, sit amet vestibulum libero scelerisque at. 
+                Praesent faucibus pharetra pharetra. 
+                Sed sodales, nisi ac consequat laoreet, felis lacus eleifend libero, vel rutrum odio nisl sit amet orci. Suspendisse faucibus malesuada elit, sit amet mattis dui venenatis quis. Nulla vitae faucibus tellus. Cras at aliquam mi. Duis nulla eros, venenatis ornare pretium ac, eleifend sed lectus. Sed tristique, lectus non placerat eleifend, est arcu dapibus enim, et gravida justo metus in lorem. Sed sit amet tempor lectus. Mauris sed ultrices lorem, sed tempor enim. Curabitur eu elit eget justo sagittis mollis sed eget elit.
+            </p>
+        </section>
+        <section>
+            <h2>Positioning</h2>
+            <img src="./me.png" height="200px" style="position: fixed; top:50px; ">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et pretium arcu.
+                Proin aliquet blandit odio, id aliquam sem placerat id. 
+                Aenean malesuada pellentesque elementum.
+                Mauris feugiat tincidunt risus, sit amet vestibulum libero scelerisque at. 
+                Praesent faucibus pharetra pharetra. 
+                Sed sodales, nisi ac consequat laoreet, felis lacus eleifend libero, vel rutrum odio nisl sit amet orci. Suspendisse faucibus malesuada elit, sit amet mattis dui venenatis quis. Nulla vitae faucibus tellus. Cras at aliquam mi. Duis nulla eros, venenatis ornare pretium ac, eleifend sed lectus. Sed tristique, lectus non placerat eleifend, est arcu dapibus enim, et gravida justo metus in lorem. Sed sit amet tempor lectus. Mauris sed ultrices lorem, sed tempor enim. Curabitur eu elit eget justo sagittis mollis sed eget elit.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
