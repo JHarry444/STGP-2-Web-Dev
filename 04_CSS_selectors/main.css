@@ -33,3 +33,39 @@ div > p {
 h2.subheading {
     color: yellow;
 }
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: black;
+}
+
+ul > li:first-child {
+    color: green;
+}
+
+ul > li:not(:first-child) {
+    color: yellow;
+}
+
+ul > li:last-child {
+    color: red;
+}
+
+ol > li:nth-child(even) {
+    color: red;
+}
+
+ol > li:nth-child(odd) {
+    color: blue;
+}
+
+p:first-of-type {
+    text-decoration: underline;
+}
+
+p:last-of-type {
+    font-style: italic;
+}
