@@ -54,18 +54,27 @@ ul > li:last-child {
     color: red;
 }
 
+/* even list items in an ordered list */
 ol > li:nth-child(even) {
     color: red;
 }
 
+/* odd list items in an ordered list */
 ol > li:nth-child(odd) {
     color: blue;
 }
 
+/* First p tag in parent */
 p:first-of-type {
     text-decoration: underline;
 }
 
+/* Last p tag in parent */
 p:last-of-type {
     font-style: italic;
+}
+
+/* Attribute selector */
+input[type=text] {
+    color: green;
 }
