@@ -50,7 +50,7 @@
         let name = "Jordan";
 
         console.log("Name:", name);
-        
+
         // finds position of small string in big string
         console.log("Index of 'r':", name.indexOf("r"));
 
@@ -58,6 +58,11 @@
         console.log("Character at position 0:", name.charAt(0));
 
         console.log("ALL CAPS:", name.toUpperCase());
+
+        {
+            let name = "barry"; // shadowing the original
+            console.log("NAME:", name);
+        }
     </script>
     <script src="./index.js"></script>
 </head>
